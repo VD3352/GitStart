@@ -1,0 +1,415 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "I am going to validate Calculator App",
+    "line": 1,
+    "id": "i-am-going-to-validate-calculator-app",
+    "tags": [],
+    "uri": "features\\demo.feature",
+    "elements": [
+      {
+        "id": "i-am-going-to-validate-calculator-app;calculator-add-functionality-testing",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Calculator Add functionality testing",
+        "tags": [
+          {
+            "name": "@calculatortesting",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I will navigate to Calc Site",
+            "match": {
+              "location": "stepDefinations\\steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1974000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add two numbers \"3\" and \"5\"",
+            "match": {
+              "location": "stepDefinations\\steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 298000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the output displayed should be \"10\"",
+            "match": {
+              "location": "stepDefinations\\steps.ts:49"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2053000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -8\n    +10\n\n    at D:\\Protractor\\ProtractorTypesriptCucumber\\stepDefinations\\steps.ts:54:21\n    at D:\\Protractor\\ProtractorTypesriptCucumber\\node_modules\\protractor\\built\\element.js:804:32\n    at ManagedPromise.invokeCallback_ (D:\\Protractor\\ProtractorTypesriptCucumber\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (D:\\Protractor\\ProtractorTypesriptCucumber\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (D:\\Protractor\\ProtractorTypesriptCucumber\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at D:\\Protractor\\ProtractorTypesriptCucumber\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at D:\\Protractor\\ProtractorTypesriptCucumber\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 322000000
+            },
+            "embeddings": [
+              {
+                "data": "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gJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACEhFUAAAAAgJCwCgAAAAAQElYBAAAAAELCKgAAAABASFgFAAAAAAgJqwAAAAAAIWEVAAAAACAkrAIAAAAAhIRVAAAAAICQsAoAAAAAEBJWAQAAAABCwioAAAAAQEhYBQAAAAAICasAAAAAACFhFQAAAAAgJKwCAAAAAISEVQAAAACAkLAKAAAAABASVgEAAAAAQsIqAAAAAEBIWAUAAAAACAmrAAAAAAAhYRUAAAAAICSsAgAAAACE/g9EBccpSvnGyQAAAABJRU5ErkJggg==",
+                "mime_type": "image/png"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-am-going-to-validate-calculator-app;calculator-add-functionality-testing-no-2",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Calculator Add functionality testing no 2",
+        "tags": [
+          {
+            "name": "@calculatortesting",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I will navigate to \"calc\" page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 703000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I add two numbers \"2\" and \"7\"",
+            "match": {
+              "location": "stepDefinations\\steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 477000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the output displayed should be \"9\"",
+            "match": {
+              "location": "stepDefinations\\steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2128000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-am-going-to-validate-calculator-app;angualar-validations",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Angualar validations",
+        "tags": [
+          {
+            "name": "@AngularTesting",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I will navigate to \"AngularJs\" page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5439000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I clicked on header link",
+            "match": {
+              "location": "stepDefinations\\steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5653000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "you will navigate to angular page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "you will enter \"hello\" in search box",
+            "match": {
+              "location": "stepDefinations\\steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3626000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "i-am-going-to-validate-calculator-app;angualar-validations",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Angualar validations",
+        "tags": [
+          {
+            "name": "@AngularTesting",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I will navigate to \"AngularJs\" page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3874000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I clicked on header link",
+            "match": {
+              "location": "stepDefinations\\steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "you will navigate to angular page",
+            "match": {
+              "location": "stepDefinations\\steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "you will enter \"hey\" in search box",
+            "match": {
+              "location": "stepDefinations\\steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3233000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinations\\hooks.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
